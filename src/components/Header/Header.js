@@ -1,10 +1,11 @@
 import React from "react";
 import "../Header/Header";
+import "./Header.css";
 
 export default function Header() {
   return (
-    <header>
-      <h1>Beasts World</h1>
+    <header className="headerCool">
+      <h1>Horned Beasts' World</h1>
     </header>
   );
 }

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./HornedBeast.css";
 
-export default function HornedBeasts({ title, imgUrl, description }) {
+export default function HornedBeasts({ title, image_url, description }) {
   const [fav, setfav] = useState(0);
 
   function handleFav() {
@@ -11,7 +11,7 @@ export default function HornedBeasts({ title, imgUrl, description }) {
   return (
     <div className="hornedBeast-container">
       <h2>{title}</h2>
-      <img src={imgUrl} alt={title} />
+      <img src={image_url} alt={title} />
       <p>{description}</p>
       <p>
         <span className="heart" onClick={handleFav}>

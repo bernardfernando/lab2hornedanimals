@@ -1,14 +1,16 @@
 hornedBeast-container {
-  width: 45vw;
+  width: 30vw;
 }
 
 img {
-  width: 100%;
-  height: 45vw;
+  width: 90%;
+  height: 25vw;
   object-fit: cover;
-  object-position: centre left;
+  object-position: center;
+  padding: 5px;
+  margin: 5px;
 }
 
 img:last-of-type {
-  object-position: right;
+  object-position: center;
 }
