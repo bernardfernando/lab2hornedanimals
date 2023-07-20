@@ -12,6 +12,8 @@ import { useState } from "react";
 function App() {
   const [modal, setModal] = useState(false);
   const [modalContent, setModalContent] = useState({});
+  // lab 4
+  const [beastData, setBeastData] = useState(data);
 
   function handleModal(beast) {
     setModal(!modal);
@@ -23,10 +25,22 @@ function App() {
     setModalContent({});
   }
 
+  function handleBeast(event) {
+    let beastNum = parseInt(event.target.value);
+    console.log(typeof beastNum);
+
+    const filteredBeast = data.filter((beast) => beast.horns === beastNum);
+    event.target.value === ""
+      ? setBeastData(data)
+      : setBeastData(filteredBeast);
+  }
+
   return (
     <div className="App">
-      <Header />
-      <Main data={data} handleModal={handleModal} />
+      <Header handleBeast={handleBeast} />
+
+      <Main beastData={beastData} handleModal={handleModal} />
+
       {modal && (
         <SelectedBeasts modalContent={modalContent} closeModal={closeModal} />
       )}
