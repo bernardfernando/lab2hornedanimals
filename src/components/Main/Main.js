@@ -5,10 +5,10 @@ import "./Main.css";
 import HornedBeast from "../HornedBeast/HornedBeast";
 import data from "../../data.json";
 
-export default function Main() {
+export default function Main({ data, handleModal }) {
   return (
     <main>
-      <HornedBeast
+      {/* <HornedBeast
         title={data[0].title}
         image_url={data[0].image_url}
         description={data[0].description}
@@ -107,7 +107,20 @@ export default function Main() {
         title={data[19].title}
         image_url={data[19].image_url}
         description={data[19].description}
-      />
+      />  */}
+      {data.map((beast, key) => {
+        return (
+          <HornedBeast
+            key={beast._id}
+            beastObject={beast}
+            title={beast.title}
+            imgUrl={beast.image_url}
+            description={beast.description}
+            horns={beast.horns}
+            handleModal={handleModal}
+          />
+        );
+      })}
     </main>
   );
 }

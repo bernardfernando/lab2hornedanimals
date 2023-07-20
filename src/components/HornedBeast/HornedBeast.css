@@ -1,16 +1,34 @@
-hornedBeast-container {
-  width: 30vw;
+/*.hornedBeast-container {
+  width: 45vw;
 }
 
 img {
   width: 90%;
-  height: 25vw;
+  height: 40vw;
   object-fit: cover;
-  object-position: center;
+  object-position: center left;
   padding: 5px;
   margin: 5px;
 }
 
 img:last-of-type {
   object-position: center;
+}
+.heart {
+  margin-right: 0.5rem;
+  cursor: pointer;
+}*/
+.hornedBeast-container {
+  width: 100%;
+}
+.hornedBeast-container img {
+  width: 100%;
+  height: 45vw;
+  object-fit: cover;
+  object-position: center;
+}
+
+.heart {
+  margin-right: 0.5rem;
+  cursor: pointer;
 }
