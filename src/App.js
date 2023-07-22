@@ -25,7 +25,7 @@ function App() {
     setModalContent({});
   }
 
-  function handleBeast(event) {
+  function handleBeasts(event) {
     let beastNum = parseInt(event.target.value);
     console.log(typeof beastNum);
 
@@ -37,7 +37,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header handleBeast={handleBeast} />
+      <Header handleBeasts={handleBeasts} />
 
       <Main beastData={beastData} handleModal={handleModal} />
 

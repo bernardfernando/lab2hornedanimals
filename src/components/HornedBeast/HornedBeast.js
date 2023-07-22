@@ -3,8 +3,9 @@ import HornedBeast from "./HornedBeast.css";
 
 export default function HornedBeasts({
   title,
-  image_url,
+  imgUrl,
   description,
+  horns,
   handleModal,
   beastObject,
 }) {
@@ -17,12 +18,9 @@ export default function HornedBeasts({
   return (
     <div className="hornedBeast-container">
       <h2>{title}</h2>
-      <img
-        src={image_url}
-        alt={title}
-        onClick={() => handleModal(beastObject)}
-      />
+      <img src={imgUrl} alt={title} onClick={() => handleModal(beastObject)} />
       <p>{description}</p>
+      <p>{horns}</p>
       <p>
         <span className="heart" onClick={handleFav}>
           ❤️

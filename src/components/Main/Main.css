@@ -2,18 +2,20 @@ main {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(20, 1fr);
-  gap: 1rem;
+  gap: 2rem;
   background-color: rgb(209, 95, 38);
   color: antiquewhite;
-  text-align: center;
+  /*text-align: center;*/
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+  place-items: center;
 }
+
 main img {
   border: 1px solid black;
-  padding: 5px;
   height: 45vw;
   width: 100%;
+  margin-left: 30px;
 }
 
 @media (min-width: 600px) {

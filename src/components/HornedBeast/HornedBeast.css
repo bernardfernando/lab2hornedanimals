@@ -1,28 +1,9 @@
-/*.hornedBeast-container {
-  width: 45vw;
-}
-
-img {
-  width: 90%;
-  height: 40vw;
-  object-fit: cover;
-  object-position: center left;
-  padding: 5px;
-  margin: 5px;
-}
-
-img:last-of-type {
-  object-position: center;
-}
-.heart {
-  margin-right: 0.5rem;
-  cursor: pointer;
-}*/
 .hornedBeast-container {
-  width: 100%;
+  width: 90%;
+  align-items: center;
 }
 .hornedBeast-container img {
-  width: 100%;
+  width: 90%;
   height: 45vw;
   object-fit: cover;
   object-position: center;
@@ -31,4 +12,9 @@ img:last-of-type {
 .heart {
   margin-right: 0.5rem;
   cursor: pointer;
+}
+
+h2,
+p {
+  align-self: right;
 }
