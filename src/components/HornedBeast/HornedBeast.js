@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import HornedBeast from "./HornedBeast.css";
+import "./HornedBeast.css";
 
 export default function HornedBeasts({
   title,
