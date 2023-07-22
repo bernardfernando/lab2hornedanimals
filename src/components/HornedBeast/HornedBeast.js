@@ -18,6 +18,7 @@ export default function HornedBeasts({
   return (
     <div className="hornedBeast-container">
       <h2>{title}</h2>
+      <p>click on image for a detailed view</p>
       <img src={imgUrl} alt={title} onClick={() => handleModal(beastObject)} />
       <p>{description}</p>
       <p>{horns}</p>

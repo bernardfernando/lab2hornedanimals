@@ -4,11 +4,11 @@ import "./Header.css";
 export default function Header({ handleBeasts }) {
   return (
     <header className="headerCool">
-      <h1>Beasts World</h1>
+      <h1>Horned Beasts</h1>
 
       <form className="hornfilter">
         <label className="horns-label" htmlFor="hornFilter">
-          Choose by horns
+          Choose by no of horns
         </label>
         <select id="numberOfHorns" name="numberOfHorns" onChange={handleBeasts}>
           <option value="">All</option>
